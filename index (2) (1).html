@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fashion Fusion</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+<div id="loader">
+
+```
+<div class="spinner"></div>
+
+<h2>Fashion Fusion</h2>
+```
+
+</div>
+
+<!-- LOGIN PAGE -->
+
+<section id="loginPage">
+
+```
+<div class="login-card">
+
+    <h1>Fashion Fusion</h1>
+
+    <p>Discover the Latest Trends</p>
+
+    <input
+    type="email"
+    id="email"
+    placeholder="Enter Email">
+
+    <input
+    type="tel"
+    id="phone"
+    placeholder="Enter Phone Number">
+
+    <button id="loginBtn">
+        Login
+    </button>
+
+</div>
+```
+
+</section>
+
+<!-- MAIN APP -->
+
+<div id="app" class="hidden">
+
+```
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Fashion Fusion
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="#home">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#products">
+                Products
+            </a>
+        </li>
+
+        <li>
+            <a href="#about">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#contact">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="nav-actions">
+
+        <button id="cartBtn">
+
+            🛒
+
+            <span id="cartCount">
+                0
+            </span>
+
+        </button>
+
+        <button onclick="logout()">
+
+            Logout
+
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- HOME -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Fashion Fusion
+        </h1>
+
+        <h2>
+            Wear Your Confidence
+        </h2>
+
+        <p>
+
+            Explore premium fashion collections
+            for Men, Women, Shoes and Accessories.
+
+        </p>
+
+        <a href="#products">
+
+            <button class="shop-btn">
+
+                Shop Now
+
+            </button>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="Search Products...">
+
+</section>
+
+<!-- FILTER -->
+
+<section class="filter-section">
+
+    <button
+    class="filter-btn"
+    data-category="All">
+
+        All
+
+    </button>
+
+    <button
+    class="filter-btn"
+    data-category="Men">
+
+        Men
+
+    </button>
+
+    <button
+    class="filter-btn"
+    data-category="Women">
+
+        Women
+
+    </button>
+
+    <button
+    class="filter-btn"
+    data-category="Shoes">
+
+        Shoes
+
+    </button>
+
+    <button
+    class="filter-btn"
+    data-category="Accessories">
+
+        Accessories
+
+    </button>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+    <h2 class="section-title">
+
+        Trending Products
+
+    </h2>
+
+    <div id="productGrid">
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2>
+
+        About Fashion Fusion
+
+    </h2>
+
+    <p>
+
+        Fashion Fusion is a modern
+        fashion e-commerce catalog
+        built using HTML, CSS and
+        JavaScript.
+
+    </p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2>
+
+        Contact Us
+
+    </h2>
+
+    <input
+    type="text"
+    placeholder="Name">
+
+    <input
+    type="email"
+    placeholder="Email">
+
+    <textarea
+    placeholder="Message"></textarea>
+
+    <button>
+
+        Send Message
+
+    </button>
+
+</section>
+
+<!-- PRODUCT MODAL -->
+
+<div
+id="productModal"
+class="modal hidden">
+
+    <div class="modal-content">
+
+        <span id="closeModal">
+
+            ×
+
+        </span>
+
+        <div id="modalBody">
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<!-- JAVASCRIPT FILES -->
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script src="js/auth.js"></script>
+
+<script src="js/router.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
